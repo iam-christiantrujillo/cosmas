@@ -25,10 +25,17 @@
     .rfm-marquee-container {
 
         img {
-            width: 150vw;
             height: auto;
 
-            padding-left: 20vw;
+            @media #{$lg-layout} {
+                width: 150vw;
+                padding-left: 20vw;
+            }
+
+            @media #{$sm-layout} {
+                width: 200vw;
+                padding-left: 25vw;
+            }
         }
     }
 
@@ -85,11 +92,11 @@
             width: 100%;
 
             @media #{$lg-layout} {
-                height: vw(105px, $base-lg-vw);
+                height: vw(110px, $base-lg-vw);
             }
 
             @media #{$sm-layout} {
-                height: vw(180px, $base-sm-vw);
+                height: vw(110px, $base-sm-vw);
             }
 
             form {
@@ -184,17 +191,21 @@
                 transition: all 0.5s;
                 padding: 0;
 
+                text-transform: uppercase;
+
                 background-color: black;
 
                 transition: all 0.5;
 
                 @media #{$lg-layout} {
-                    font-size: vw(12px, $base-lg-vw);
+                    font-size: vw(11px, $base-lg-vw);
+                    line-height: vw(26px, $base-lg-vw);
                     padding: vw(10px, $base-lg-vw) vw(26px, $base-lg-vw);
                 }
 
                 @media #{$sm-layout} {
-                    font-size: vw(12px, $base-sm-vw);
+                    font-size: vw(11px, $base-sm-vw);
+                    line-height: vw(26px, $base-sm-vw);
                     padding: vw(10px, $base-sm-vw) vw(26px, $base-sm-vw);
                 }
 
