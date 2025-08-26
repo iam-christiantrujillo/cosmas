@@ -97,7 +97,7 @@ const ComingSoon = () => {
 
                         </form>
                     )}
-
+                    
                     {/* Mensajes FUERA del form para que se muestren aunque se oculte */}
                     {error && (
                         <p className="message-form" style={{ color: '#ff6a6a', marginTop: '20px' }}>
