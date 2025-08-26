@@ -16,7 +16,7 @@ export default function Home() {
 
         </main>
         <footer>
-          <p>© {`${new Date().getFullYear()}`} COSMAS</p>
+          <p>© {`${new Date().getFullYear()}`} COSMAS CORPORATION</p>
         </footer>
       </div>
     </>
