@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Stratford';
+    src: url('./fonts/Stratford-Medium.woff2') format('woff2'),
+        url('./fonts/Stratford-Medium.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

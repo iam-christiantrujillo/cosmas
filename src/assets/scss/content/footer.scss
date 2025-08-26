@@ -1,0 +1,30 @@
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media #{$lg-layout} {
+        bottom: vw(20px, $base-lg-vw);
+    }
+
+    @media #{$sm-layout} {
+        bottom: vw(20px, $base-sm-vw);
+    }
+
+    p {
+        font-family: 'Stratford';
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+
+        @media #{$lg-layout} {
+            font-size: vw(10px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            font-size: vw(10px, $base-sm-vw);
+        }
+    }
+}

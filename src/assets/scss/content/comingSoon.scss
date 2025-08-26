@@ -1,0 +1,204 @@
+.coming-soon {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+}
+
+.coming-soon-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$lg-layout} {
+        gap: vw(120px, $base-lg-vw);
+    }
+
+    @media #{$sm-layout} {
+        gap: vw(120px, $base-sm-vw);
+    }
+
+    .rfm-marquee-container {
+
+        img {
+            width: 150vw;
+            height: auto;
+
+            padding-left: 20vw;
+        }
+    }
+
+
+    .content-wrapper {
+        width: 100%;
+        max-width: 1200px;
+
+        padding: 0 24px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$lg-layout} {
+            gap: vw(24px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            gap: vw(24px, $base-sm-vw);
+        }
+
+        @media #{$lg-layout} {
+            max-width: vw(462px, $base-lg-vw);
+
+            padding: 0 vw(24px, $base-lg-vw);
+        }
+
+        @media #{$sm-layout} {
+            max-width: vw(400px, $base-sm-vw);
+            padding: 0 vw(24px, $base-sm-vw);
+        }
+
+        p {
+            font-family: 'Stratford';
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+
+            @media #{$lg-layout} {
+                font-size: vw(12px, $base-lg-vw);
+            }
+
+            @media #{$sm-layout} {
+                font-size: vw(12px, $base-sm-vw);
+            }
+        }
+
+
+        .form-wrapper {
+
+            width: 100%;
+
+            @media #{$lg-layout} {
+                height: vw(105px, $base-lg-vw);
+            }
+
+            @media #{$sm-layout} {
+                height: vw(180px, $base-sm-vw);
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media #{$lg-layout} {
+                    gap: vw(10px, $base-lg-vw);
+                }
+
+                @media #{$sm-layout} {
+                    gap: vw(10px, $base-sm-vw);
+                }
+            }
+
+            input {
+                background-color: transparent;
+                color: #000;
+                font-family: 'Stratford';
+                font-size: 12px;
+                padding-bottom: 5px;
+                border: none;
+                border-bottom: 0.5px solid #000;
+                outline: none;
+                border-radius: 0;
+                width: 100%;
+
+
+
+                @media #{$lg-layout} {
+                    font-size: vw(12px, $base-lg-vw);
+                    padding-bottom: vw(5px, $base-lg-vw);
+                }
+
+                @media #{$sm-layout} {
+                    font-size: vw(12px, $base-sm-vw);
+                    padding-bottom: vw(5px, $base-sm-vw);
+                }
+            }
+
+            input::placeholder {
+                color: #a3a3a3;
+            }
+
+            p {
+                color: #000;
+                font-family: 'Stratford';
+                font-size: 12px;
+                line-height: normal;
+
+                @media #{$lg-layout} {
+                    font-size: vw(12px, $base-lg-vw);
+
+                }
+
+                @media #{$sm-layout} {
+                    font-size: vw(12px, $base-sm-vw);
+                }
+
+                &.message-form {
+                    font-size: 11px;
+
+                    @media #{$lg-layout} {
+                        font-size: vw(11px, $base-lg-vw);
+
+                    }
+
+                    @media #{$sm-layout} {
+                        font-size: vw(11px, $base-sm-vw);
+                    }
+
+                }
+            }
+
+
+
+            button {
+                position: relative;
+                color: #fff;
+                font-family: 'Stratford';
+                font-size: 12px;
+                line-height: 26px;
+                background-color: transparent;
+                border: 1px solid black;
+                text-decoration: none;
+                width: fit-content;
+                transition: all 0.5s;
+                padding: 0;
+
+                background-color: black;
+
+                transition: all 0.5;
+
+                @media #{$lg-layout} {
+                    font-size: vw(12px, $base-lg-vw);
+                    padding: vw(10px, $base-lg-vw) vw(26px, $base-lg-vw);
+                }
+
+                @media #{$sm-layout} {
+                    font-size: vw(12px, $base-sm-vw);
+                    padding: vw(10px, $base-sm-vw) vw(26px, $base-sm-vw);
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}

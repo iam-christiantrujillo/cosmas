@@ -1,0 +1,9 @@
+$lg-layout: 'only screen and (min-width: 1030px)';
+$sm-layout: 'only screen and (max-width: 1030px)';
+
+$base-lg-vw: 1512px;
+$base-sm-vw: 430px;
+
+@function vw($px-vw, $base-vw) {
+    @return ($px-vw * 100vw) / $base-vw
+}
